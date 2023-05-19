@@ -1,65 +1,14 @@
 <h1 align = "center"> INSTAGRAM PROJECT </h1>
 
-<p align="center">
-<a href="Java url">
-    <img alt="Java" src="https://img.shields.io/badge/Java->=8-darkblue.svg" />
-</a>
-<a href="Maven url" >
-    <img alt="Maven" src="https://img.shields.io/badge/maven-3.0.5-brightgreen.svg" />
-</a>
-<a href="Spring Boot url" >
-    <img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-3.0.6-brightgreen.svg" />
-</a>
-  
-<a >
-    <img alt="MySQL" src="https://img.shields.io/badge/MySQL-blue.svg">
-</a>
-</p>
-   
-This project is a basic web application that allows users to sign in, sign up, and manage their profile information. Additionally, users can create posts and view posts created by other users. The application uses authentication tokens to secure user data and ensure that only authenticated users can access certain features of the application.
+>### Prerequisites
 
----
-
-## Framework Used
-* Spring Boot
-
----
-
-## Dependencies
-The following dependencies are required to run the project:
-
-* Spring Boot Dev Tools
-* Spring Web
-* Spring Data JPA
-* MySQL Driver
-* Lombok
-* Validation
-* Swagger
-
-
-## Database Configuration
-To connect to a MySQL database, update the application.properties file with the appropriate database URL, username, and password. The following properties need to be updated:
-```
-spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
-spring.datasource.url = jdbc:mysql://localhost:3306/<DatabaseName>
-spring.datasource.username = <userName>
-spring.datasource.password = <password>
-spring.jpa.show-sql = true
-spring.jpa.hibernate.ddl-auto = update
-
-spring.jpa.properties.hibernate.show_sql=true
-spring.jpa.properties.hibernate.use_sql_comments=true
-spring.jpa.properties.hibernate.format_sql=true
-
-```
-
-## Language Used
-* ![Java](https://img.shields.io/badge/Language-Java%208%20or%20higher-yellow)
-
----
-## Data Model
+-   MySql
+-   SpringBoot
+-   Java
+>### Data Model
 
 The Job data model is defined in the Job class, which has the following attributes:
+<br>
 
 * User Model
 ```
@@ -91,7 +40,7 @@ tokenCreationDate : LocalDate
 @OneToOne 
 user : User
 ```
-## Data Flow
+>### Data Flow
 
 1. The user at client side sends a request to the application through the API endpoints.
 2. The API receives the request and sends it to the appropriate controller method.
@@ -101,7 +50,11 @@ user : User
 6. The API sends the response back to the user.
 
 
-## API End Points 
+
+
+
+
+>### API End Points 
 
 The following endpoints are available in the API:
 
@@ -119,16 +72,14 @@ POST /post: create a new post
 GET /post: get all posts
 ```
 
-## DataBase Used
-* SQL database
-```
-We have used Persistent database to implement CRUD Operations.
-```
----
+
+
 
 ## Project Summary
 
 The project is a basic web application built using Java and the Spring framework. It allows users to sign up, sign in, and manage their profile information. Users can also create and view posts. The application uses authentication tokens to secure user data and ensure that only authenticated users can access certain features. The API endpoints include user signup, signin, and update details, post creation and retrieval, and authentication token creation. 
+
+
 
 
 
