@@ -1,4 +1,4 @@
-<h1 align = "center"> INSTAGRAM PROJECT </h1>
+<h1 align = "center"> INSTAGRAM </h1>
 
 >### Prerequisites
 
